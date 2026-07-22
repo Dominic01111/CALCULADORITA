@@ -1,4 +1,4 @@
-## CALCULADORA - VERSIÓN 3
+## CALCULADORA - VERSIÓN 4
 # Autor(a): DOMINIC NOVELLA
 # ===========================================
 print("CALCULADORA")
@@ -9,6 +9,7 @@ num2 = float(input("Ingrese el segundo número: "))
 print("\ n1. Sumar")
 print(" 2. Restar")
 print(" 3. Multiplicar")
+print(" 4. Dividir")
 
 opcion = input("\n Seleccione una opción: ")
 
@@ -20,6 +21,12 @@ print("\n La resta es:", num1 - num2)
 
 elif opcion == "3":
 print("\n La multiplicación es:", num1 * num2)
+
+elif opcion == "4":
+if num2 != 0:
+print("\n La División es:", num1 / num2)
+else:
+print("No se puede dividir entre cero.")
 
 else:
 print("\n Opción no válida.")
